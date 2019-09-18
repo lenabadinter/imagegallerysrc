@@ -1,0 +1,5 @@
+<cdk-virtual-scroll-viewport itemSize="150">
+  <div *ngFor="let photo of galleryService.photos">
+    <img (mousemove)="mouseHover($event)" class="list-image" [src]="photo.download_url" (click)="galleryService.setSelectedImage(photo)">
+  </div>
+</cdk-virtual-scroll-viewport>

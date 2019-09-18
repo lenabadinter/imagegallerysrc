@@ -1,0 +1,20 @@
+<div class="page-container">
+  <div class="left-side">
+    <mat-tab-group>
+      <mat-tab label="All">
+          <app-image-list></app-image-list>
+      </mat-tab>
+      <mat-tab label="Favorites">
+          <div class="image-list-container">Content 2</div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  <div class="right-side">
+    <div class="image-meta-data">
+        <app-image-meta-data></app-image-meta-data>
+    </div>
+    <div class="image-view">
+        <img *ngIf="galleryService.selectedImage" [src]="galleryService.selectedImage.download_url">
+    </div>
+  </div>
+</div>

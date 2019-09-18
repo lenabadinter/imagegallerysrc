@@ -1,0 +1,15 @@
+cdk-virtual-scroll-viewport {
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: calc(100vh - 48px) ;
+
+  div {
+    height: 150px;
+  }
+
+  .list-image {
+    height: 150px;
+  }
+}
